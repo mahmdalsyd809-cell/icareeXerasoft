@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-container: var(--primary-container);
+  --color-on-primary: var(--on-primary);
+  --color-on-primary-container: var(--on-primary-container);
+  --color-surface: var(--surface);
+  --color-surface-container: var(--surface-container);
+  --color-surface-container-high: var(--surface-container-high);
+  --color-surface-container-highest: var(--surface-container-highest);
+  --color-outline: var(--outline);
+  --color-outline-variant: var(--outline-variant);
+
+  --font-playfair: var(--font-playfair);
+  --font-jakarta: var(--font-jakarta);
+}
+
+:root {
+  --background: #131314;
+  --foreground: #e5e2e3;
+  --primary: #f2ca50;
+  --primary-container: #d4af37;
+  --on-primary: #3c2f00;
+  --on-primary-container: #554300;
+  --surface: #131314;
+  --surface-container: #201f20;
+  --surface-container-high: #2a2a2b;
+  --surface-container-highest: #353436;
+  --outline: #99907c;
+  --outline-variant: #4d4635;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-jakarta), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .font-playfair {
+  font-family: var(--font-playfair), serif;
+}
